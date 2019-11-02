@@ -26,7 +26,7 @@ class DataSet{
         ]
 
         this.__getOneSrciptStr = function ( oneApiStr ) {
-            return "<script src=\""+this.prefix+this.api+"\"></script>";
+            return "<script src=\""+this.prefix+this.api+oneApiStr+"\"></script>";
         }
 
         this._getScriptStr = function ( apiStr ) {
