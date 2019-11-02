@@ -52,11 +52,11 @@ class DataSet{
         this.blockGoogle = "<meta name=\"googlebot\" content=\"noindex\">";
         this.fullView = "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0\">";
         this.__iconImageName = "leaf.png";
-        this.iconImage = "<link rel=\"icon\" href=\""+this.prefix+this.image+this.__iconImageName+"\">";
+        this.iconImage = "<link rel=\"icon\" href=\"http://"+this.prefix+this.image+this.__iconImageName+"\">";
         this.__titleName = "Green Lab";
         this.titleName = "<title>"+this.__titleName+"</title>";
         this.getAll= function () {
-            return this.getScriptStr()+this.titleName+this.iconImage+this.fullView+this.blockGoogle+this.charType;
+            return this.getScriptStr()+this.titleName+this.fullView+this.blockGoogle+this.charType;
         }
 
 
