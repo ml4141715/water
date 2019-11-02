@@ -56,7 +56,7 @@ class DataSet{
         this.__titleName = "Green Lab";
         this.titleName = "<title>"+this.__titleName+"</title>";
         this.getAll= function () {
-            return this.getScriptStr()+this.titleName+this.fullView+this.blockGoogle+this.charType;
+            return this.getScriptStr()+this.titleName+this.iconImage+this.fullView+this.blockGoogle+this.charType;
         }
 
 
