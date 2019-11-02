@@ -25,7 +25,7 @@ class DataSet{
             "react-dom.developpment.js"
         ]
         this.__getOneSrciptStr = function ( oneApiStr ) {
-            return "<script src=\""+this.prefix+this.api+oneApiStr+"\"></script>";
+            return "<script src=\"http://"+this.prefix+this.api+oneApiStr+"\"></script>";
         }
         this._getScriptStr = function ( apiStr ) {
             var total = "";
