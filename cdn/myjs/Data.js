@@ -103,13 +103,18 @@ class EquipmentData{
         var description = this.currentEquipmentData.description;
         var currentImageId = this.currentEquipmentData.coverBlobId;
 
-        var imageblob = localStorage.getItem( currentImageId );
-        var imageData = JSON.parse(imageblob).blob;
+        if( currentImageId != "" ){
 
-        //imageOP = new ImageOp();
+            var imageblob = localStorage.getItem( currentImageId );
+            var imageData = JSON.parse(imageblob).blob;
+
+            //imageOP = new ImageOp();
+            imageOP.setCoverImage( imageData );
+        }
+
         imageOP.setNameValue( name );
         imageOP.setTextArea( description );
-        imageOP.setCoverImage( imageData );
+
 
         //this.currentEquipmentData.favourite
         //console.log("waht happened?");
